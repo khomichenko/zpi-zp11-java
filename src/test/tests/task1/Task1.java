@@ -1,4 +1,4 @@
-package tests;
+package tests.task1;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -9,7 +9,7 @@ import org.junit.Test;
  */
 public class Task1 {
     @Test public void test(){
-        tasks.Task1 task = new tasks.Task1();
+        tasks.task1.Task1 task = new tasks.task1.Task1();
         String[] processed = task.process(new String[]{"Привіт", "Звідки ти родом?", "Як тебе звати?"});
         Assert.assertArrayEquals(new String[]{"Звідки ти родом?", "Як тебе звати?"},processed);
     }

@@ -1,5 +1,9 @@
-package tasks;
+package tasks.task1;
 
+/**
+ * 1. Визначити ті рядки, довжина яких менша (більша) середньої. На вхід поступає
+ * масив String. На виході – масив String.
+ */
 public class Task1 {
     public String[] process(String[] strings) {
         int sum = 0;
