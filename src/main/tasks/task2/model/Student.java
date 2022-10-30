@@ -1,6 +1,7 @@
 package tasks.task2.model;
 
 import java.util.Date;
+import java.util.Objects;
 
 public class Student {
     private String firstName;
@@ -19,13 +20,21 @@ public class Student {
     }
 
     @Override
-    public boolean equals(Object another) {
-        if (another instanceof Student == false) {
-            return false;
-        }
-        return firstName.equals(((Student) another).firstName) &&
-               lastName.equals(((Student) another).lastName)   &&
-               birthdate.equals(((Student) another).birthdate);
+    public final boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || o instanceof Student==false) return false;
+        Student student = (Student) o;
+        if (!Objects.equals(firstName, student.firstName)) return false;
+        if (!Objects.equals(lastName, student.lastName)) return false;
+        return Objects.equals(birthdate, student.birthdate);
+    }
+
+    @Override
+    public final int hashCode() {
+        int result = firstName != null ? firstName.hashCode() : 0;
+        result = 31 * result + (lastName != null ? lastName.hashCode() : 0);
+        result = 31 * result + (birthdate != null ? birthdate.hashCode() : 0);
+        return result;
     }
 
     @Override

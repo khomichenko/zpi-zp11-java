@@ -31,6 +31,9 @@ public class Task2 {
         String json = new Gson().toJson(student);
         Student student2 = new Gson().fromJson(json, Student.class);
         Assert.assertEquals(student,student2);
-        EqualsVerifier.forClass(Student.class).verify();
+        EqualsVerifier.simple()
+                .forClass(Student.class)
+                .withOnlyTheseFields("firstName","lastName","birthdate")
+                .verify();
     }
 }
