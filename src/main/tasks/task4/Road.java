@@ -1,8 +1,8 @@
-package tasks.task4.model;
+package tasks.task4;
 
 import lombok.Getter;
-import tasks.task4.model.people.Human;
-import tasks.task4.model.transport.Vehicle;
+import tasks.task4.people.Human;
+import tasks.task4.transport.Vehicle;
 
 import java.util.ArrayList;
 import java.util.List;

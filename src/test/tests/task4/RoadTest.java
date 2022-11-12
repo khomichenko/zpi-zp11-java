@@ -2,10 +2,10 @@ package tests.task4;
 
 import org.junit.Assert;
 import org.junit.Test;
-import tasks.task4.model.Road;
-import tasks.task4.model.people.Human;
-import tasks.task4.model.transport.Car;
-import tasks.task4.model.transport.Vehicle;
+import tasks.task4.Road;
+import tasks.task4.people.Human;
+import tasks.task4.transport.Car;
+import tasks.task4.transport.Vehicle;
 
 public class RoadTest {
 

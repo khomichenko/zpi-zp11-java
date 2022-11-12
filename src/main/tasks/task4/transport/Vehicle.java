@@ -1,12 +1,12 @@
-package tasks.task4.model.transport;
+package tasks.task4.transport;
 
 import com.sun.istack.internal.NotNull;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
-import tasks.task4.model.people.Human;
-import tasks.task4.model.transport.exceptions.NoFreeSeatException;
-import tasks.task4.model.transport.exceptions.NoPassenger;
+import tasks.task4.people.Human;
+import tasks.task4.transport.exceptions.NoFreeSeatException;
+import tasks.task4.transport.exceptions.NoPassenger;
 
 import java.util.ArrayList;
 import java.util.List;

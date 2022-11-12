@@ -1,4 +1,4 @@
-package tasks.task4.model.people;
+package tasks.task4.people;
 
 public class Fireman extends Human{
 }

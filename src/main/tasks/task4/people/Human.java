@@ -1,4 +1,4 @@
-package tasks.task4.model.people;
+package tasks.task4.people;
 
 import com.sun.istack.internal.NotNull;
 import lombok.*;

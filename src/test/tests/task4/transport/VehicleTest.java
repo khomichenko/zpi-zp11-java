@@ -1,11 +1,11 @@
 package tests.task4.transport;
 
 import org.junit.Test;
-import tasks.task4.model.people.Human;
-import tasks.task4.model.transport.Car;
-import tasks.task4.model.transport.Vehicle;
-import tasks.task4.model.transport.exceptions.NoFreeSeatException;
-import tasks.task4.model.transport.exceptions.NoPassenger;
+import tasks.task4.people.Human;
+import tasks.task4.transport.Car;
+import tasks.task4.transport.Vehicle;
+import tasks.task4.transport.exceptions.NoFreeSeatException;
+import tasks.task4.transport.exceptions.NoPassenger;
 
 public class VehicleTest {
 
