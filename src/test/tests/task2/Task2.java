@@ -4,7 +4,6 @@ import com.google.gson.Gson;
 import nl.jqno.equalsverifier.EqualsVerifier;
 import org.junit.Assert;
 import org.junit.Test;
-import tasks.task2.controller.Controller;
 import tasks.task2.model.Student;
 
 import java.text.ParseException;
